@@ -1,0 +1,124 @@
+
+body {
+  /* Remove user agent stylesheet styling */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  /* Default background colour & text colour */
+  color: #202020;
+  background-color: #fffde1;
+}
+
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: 'League Script', cursive;
+}
+
+h1 {
+  margin-top:0;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  float:left;
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-color: #202020;
+  padding: 20px;
+  width: 60%;
+}
+
+/* Fixes layout  */
+#interests, #contact {
+  height: auto;
+  clear: both;
+}
+
+.alternate-background {
+background-color: #ff9d76;
+
+}
+
+.highlight-background {
+  background-color: #fb3569;
+  color: white;
+}
+
+.big-image {
+  width: 70%;
+}
+
+.small-image {
+  width: 20%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  h1, nav {
+    margin-bottom: 5px;
+  }
+
+  section {
+    float: none;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  /* On mobile our colour scheme breaks with two sections
+  stacking with the same background. We update this for the
+  contact sections using ids */
+
+  #contact {
+     background-color: #ff9d76;
+  }
+
+  #laura {
+    background-color: #fffde1;
+    color: #202020;
+  }
+}
